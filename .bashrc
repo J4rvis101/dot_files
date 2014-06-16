@@ -40,23 +40,6 @@ case "$TERM" in
     xterm-color) color_prompt=yes;;
 esac
 
-parse_git_branch() {
-	Color_Off="\033[0m"
-	IRed="\033[0;91m"
-	Green="\033[0;32m"
-  git branch &>/dev/null;\
-	if [ $? -eq 0 ]; then \
-  	echo "$(echo `git status` | grep "Nichts zum Einreichen" > /dev/null 2>&1; \
-	  if [ "$?" -eq "0" ]; then \
-	    echo $(__git_ps1 " ($Green%s$Color_Off)"); \
-	  else \
-	    echo $(__git_ps1 " ($IRed%s *$Color_Off)"); \
-	  fi)"; \
-	else \
-		echo ""; \
-	fi
-}
-
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
@@ -137,15 +120,6 @@ if [ $? -eq 0 ]; then \
     echo "'$Red'"$(__git_ps1 " (%s*)"); \
   fi)'$Color_Off'\$"; \
 fi): '
-#'$(parse_git_branch)\[\e[0m\] $: '
-
-function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nichts zu committen, Arbeitsverzeichnis unverändert" ]] && echo "*"
-}
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/(\1$(parse_git_dirty))/"
-}
-
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
