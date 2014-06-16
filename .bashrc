@@ -128,17 +128,16 @@ Jobs="\j"
 # This PS1 snippet was adopted from code for MAC/BSD I saw from: http://allancraig.net/index.php?option=com_content&view=article&id=108:ps1-export-command-for-git&catid=45:general&Itemid=96
 # I tweaked it to work on UBUNTU 11.04 & 11.10 plus made it mo' better
 
-export PS1=$Green$Time12h$Color_Off$Blue$PathShort$Color_Off'$(parse_git_branch)\[\e[0m\]'
-#'$(git branch &>/dev/null;\
-#if [ $? -eq 0 ]; then \
-#  echo "$(echo `git status` | grep "Nichts zum Einreichen" > /dev/null 2>&1; \
-#  if [ "$?" -eq "0" ]; then \
-#    echo "'$Green'"$(__git_ps1 " (%s)"); \
-#  else \
-#    echo "'$Red'"$(__git_ps1 " (%s*)"); \
-#  fi)'$Color_Off'\$"; \
-#fi): '
-
+export PS1=$Green$Time12h$Color_Off$Blue$PathShort$Color_Off'$(git branch &>/dev/null;\
+if [ $? -eq 0 ]; then \
+  echo "$(echo `git status` | grep "nichts zu committen, Arbeitsverzeichnis unverändert" > /dev/null 2>&1; \
+  if [ "$?" -eq "0" ]; then \
+    echo "'$Green'"$(__git_ps1 " (%s)"); \
+  else \
+    echo "'$Red'"$(__git_ps1 " (%s*)"); \
+  fi)'$Color_Off'\$"; \
+fi): '
+#'$(parse_git_branch)\[\e[0m\] $: '
 
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nichts zu committen, Arbeitsverzeichnis unverändert" ]] && echo "*"
