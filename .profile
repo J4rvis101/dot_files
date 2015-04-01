@@ -21,8 +21,8 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 export PATH=$PATH:/usr/bin/ant
-export PATH=$PATH:~/development/res/android-sdk-linux
-export PATH=$PATH:~/development/res/android-sdk-linux/tools
-export PATH=$PATH:~/development/res/android-sdk-linux/platform-tools
+export PATH=$PATH:~/dev/res/android-sdk-linux
+export PATH=$PATH:~/dev/res/android-sdk-linux/tools
+export PATH=$PATH:~/devt/res/android-sdk-linux/platform-tools
 export JAVA_HOME=/opt/Oracle_Java/jdk1.8.0_20/
-export ANDROID_HOME=~/development/res/android-sdk-linux
+export ANDROID_HOME=~/dev/res/android-sdk-linux
