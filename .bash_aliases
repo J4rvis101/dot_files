@@ -16,6 +16,21 @@ alias la='ls -lA'
 alias l='ls -CF'
 alias ..='cd ..'
 
+# Git aliases
+alias gs='git status'
+alias ga='git add -A'
+alias gb='git branch '
+alias gc='git add -A;git commit -m'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+alias gps='git push'
+alias gpl='git pull'
+alias gf='git fetch'
+
+alias got='git '
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
