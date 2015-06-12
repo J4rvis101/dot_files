@@ -26,6 +26,7 @@ alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
 alias gps='git push'
+alias gpsb='git push backup'
 alias gpl='git pull'
 alias gf='git fetch'
 
