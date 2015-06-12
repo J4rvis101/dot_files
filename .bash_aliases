@@ -28,6 +28,7 @@ alias gx='gitx --all'
 alias gps='git push'
 alias gpsb='git push backup'
 alias gpl='git pull'
+alias gplb='git pull backup master'
 alias gf='git fetch'
 
 alias got='git '
