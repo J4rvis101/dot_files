@@ -14,7 +14,16 @@ fi
 alias ll='ls -l'
 alias la='ls -lA'
 alias l='ls -CF'
+
+# System aliases
+alias sui='sudo apt-get install'
+alias sur='sudo apt-get remove'
+alias suar='sudo apt-get autoremove'
+alias sucl='sudo apt-get clean'
+alias suud='sudo apt-get update'
+alias suug='sudo apt-get update && sudo apt-get upgrade'
 alias ..='cd ..'
+alias hm='cd ~'
 
 # Git aliases
 alias gs='git status'
