@@ -24,5 +24,5 @@ export PATH=$PATH:/usr/bin/ant
 export PATH=$PATH:~/dev/res/android-sdk-linux
 export PATH=$PATH:~/dev/res/android-sdk-linux/tools
 export PATH=$PATH:~/dev/res/android-sdk-linux/platform-tools
-export JAVA_HOME=/opt/Oracle_Java/jdk1.8.0_20/
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 export ANDROID_HOME=~/dev/res/android-sdk-linux
