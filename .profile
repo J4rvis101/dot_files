@@ -26,3 +26,4 @@ export PATH=$PATH:~/dev/res/android-sdk-linux/tools
 export PATH=$PATH:~/dev/res/android-sdk-linux/platform-tools
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 export ANDROID_HOME=~/dev/res/android-sdk-linux
+export IBUS_ENABLE_SYNC_MODE=1
