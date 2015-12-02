@@ -25,6 +25,8 @@ alias suug='sudo apt-get update && sudo apt-get upgrade'
 alias ..='cd ..'
 alias hm='cd ~'
 alias go='gnome-open'
+alias vpn='/opt/cisco/anyconnect/bin/vpn'
+alias vpnui='/opt/cisco/anyconnect/bin/vpnui'
 
 # Git aliases
 alias gs='git status'
