@@ -44,6 +44,7 @@ alias gpsb='git push backup'
 alias gpl='git pull'
 alias gplb='git pull backup master'
 alias gf='git fetch'
+alias gh='git hist'
 
 alias got='git '
 
