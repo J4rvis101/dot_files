@@ -52,7 +52,7 @@ alias gcd="git add -A;git commit -m \"\$(hostname) \$(date)\"";
 alias got='git '
 
 # diary
-alias diary='cd dev/projects/diary && jekyll serve --w'
+alias diary='cd /home/j4rvis/dev/projects/diary && jekyll serve --w'
 
 # playerctl aliase
 alias pc='playerctl --player=spotify play-pause'
