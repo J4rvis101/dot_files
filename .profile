@@ -24,6 +24,9 @@ export PATH=$PATH:/usr/bin/ant
 export PATH=$PATH:~/dev/res/android-sdk-linux
 export PATH=$PATH:~/dev/res/android-sdk-linux/tools
 export PATH=$PATH:~/dev/res/android-sdk-linux/platform-tools
+
+export SCALA_HOME=/usr/local/share/scala
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 export ANDROID_HOME=~/dev/res/android-sdk-linux
 export IBUS_ENABLE_SYNC_MODE=1
+export PATH=$PATH:$SCALA_HOME/bin

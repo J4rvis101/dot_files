@@ -27,6 +27,7 @@ alias hm='cd ~'
 alias go='gnome-open'
 alias vpn='/opt/cisco/anyconnect/bin/vpn'
 alias vpnui='/opt/cisco/anyconnect/bin/vpnui'
+alias wttr='curl wttr.in/berlin'
 
 # Git aliases
 alias gs='git status'
@@ -46,8 +47,12 @@ alias gplr='git pull --rebase'
 alias gplb='git pull backup master'
 alias gf='git fetch'
 alias gh='git hist'
+alias gcd="git add -A;git commit -m \"\$(hostname) \$(date)\"";
 
 alias got='git '
+
+# diary
+alias diary='cd dev/projects/diary && jekyll serve --w'
 
 # playerctl aliase
 alias pc='playerctl --player=spotify play-pause'
