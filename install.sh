@@ -6,5 +6,5 @@ rm ~/.profile
 echo 'Copying new bash files'
 cp .bash* ~/.
 cp .profile ~/.
-source ~/.bashrc
+cd ~/. && source .bashrc
 echo 'Bash files updated'
