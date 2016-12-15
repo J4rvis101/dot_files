@@ -24,6 +24,7 @@ export PATH=$PATH:/usr/bin/ant
 export PATH=$PATH:~/dev/res/android-sdk-linux
 export PATH=$PATH:~/dev/res/android-sdk-linux/tools
 export PATH=$PATH:~/dev/res/android-sdk-linux/platform-tools
+export PATH=$PATH:~//home/j4rvis/programms/WebStorm-162.1628.41/bin
 
 export SCALA_HOME=/usr/local/share/scala
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
