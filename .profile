@@ -21,13 +21,12 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 export PATH=$PATH:/usr/bin/ant
-export PATH=$PATH:~/dev/res/android-sdk-linux
-export PATH=$PATH:~/dev/res/android-sdk-linux/tools
-export PATH=$PATH:~/dev/res/android-sdk-linux/platform-tools
-export PATH=$PATH:~//home/j4rvis/programms/WebStorm-162.1628.41/bin
+export PATH=$PATH:~/dev/android/sdk
+export PATH=$PATH:~/dev/android/sdk/tools
+export PATH=$PATH:~/dev/android/sdk/platform-tools
 
 export SCALA_HOME=/usr/local/share/scala
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
-export ANDROID_HOME=~/dev/res/android-sdk-linux
+export ANDROID_HOME=~/dev/android/sdk
 export IBUS_ENABLE_SYNC_MODE=1
 export PATH=$PATH:$SCALA_HOME/bin

@@ -66,4 +66,4 @@ export NVM_DIR="/home/j4rvis/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # export PATH="$PATH:/home/j4rvis/.rvm/scripts/rvm" # Add RVM to PATH for scripting
-source /home/j4rvis/.rvm/scripts/rvm
+# source /home/j4rvis/.rvm/scripts/rvm
